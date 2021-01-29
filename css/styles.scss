@@ -15,6 +15,11 @@
   --rbg: linear-gradient(180deg, #f2fafb, #fde3e3);
 }
 
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
 h1,
 h2,
 h3,
@@ -98,6 +103,8 @@ p {
 
 .header {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 2;
   .top {
@@ -120,14 +127,50 @@ p {
       }
     }
   }
+  .nav {
+    .logo {
+      display: none;
+    }
+  }
+  .sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--bg2);
+    padding: 0 6rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    .logos {
+      display: block;
+      a {
+        margin: 0;
+        padding: 0;
+        .logo {
+          display: block;
+          margin: 1rem;
+        }
+      }
+    }
+
+    .icon {
+      i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 1rem;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
   nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
-
-    .logo {
-      display: none;
-    }
+    transition: all 0.5s ease;
 
     .social-icons {
       color: var(--primary);
@@ -141,16 +184,15 @@ p {
       }
     }
 
-    &.sticky {
-      background: #fff;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    }
-
     ul {
       margin: 0;
       padding: 0;
       list-style: none;
       position: relative;
+
+      .logos {
+        display: none;
+      }
 
       li {
         text-align: left;
@@ -215,7 +257,7 @@ p {
     font-size: 15px;
     margin-left: 40px;
   }
-  @media all and (max-width: 760px) {
+  @media all and (max-width: 769px) {
     .top {
       display: none;
       margin: 0;
@@ -223,10 +265,10 @@ p {
     .nav {
       width: 100%;
       background: var(--bg2) !important;
+      .logo {
+        display: block;
+      }
       nav {
-        .logo {
-          display: block;
-        }
         .social-icons {
           display: none;
         }
@@ -269,7 +311,7 @@ p {
       color: #000;
       position: absolute;
       top: 0;
-      right: 40px;
+      right: 100px;
       line-height: 70px;
       cursor: pointer;
       font-size: 25px;
@@ -394,7 +436,7 @@ p {
     box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.15);
 
     h2 {
-      line-height: 0;
+      // line-height: 0;
       color: var(--main);
     }
 
@@ -552,8 +594,24 @@ p {
     }
   }
 
-  img {
-    width: 100%;
+  .spin {
+    overflow: hidden;
+    img {
+      width: 100%;
+      animation: rotating 10s linear infinite;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
 
@@ -729,10 +787,7 @@ p {
 .footer {
   background: var(--rbg);
   padding: 2rem 0 4rem 0;
-  .copy-right {
-    color: var(--para);
-    text-align: center;
-  }
+
   footer {
     margin: 2rem 0;
     .col-lg-3 {
@@ -751,8 +806,15 @@ p {
         font-size: 18px;
         font-weight: 600;
         display: flex;
+
+        &:hover {
+          i {
+            margin-left: 13px;
+          }
+        }
         i {
           margin: 6px 0 0 7px;
+          transition: 0.6s;
         }
       }
     }
@@ -784,7 +846,7 @@ p {
       .icons {
         height: 60px;
         width: 60px;
-        font-size: 18px;
+        font-size: 20px;
         border-radius: 50%;
         border: 1.5px solid var(--main);
         color: var(--main);
@@ -797,6 +859,10 @@ p {
         }
       }
     }
+  }
+  .copy-right {
+    color: var(--para);
+    text-align: center;
   }
 }
 

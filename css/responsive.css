@@ -1,0 +1,88 @@
+@media only screen and (max-width: 1024px) {
+  .header nav .social-icons {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 994px) {
+  .plan .box {
+    -webkit-box-shadow: 0px 0 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 0 20px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .get-in-touch .spin {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .title h1 {
+    font-size: 38px;
+  }
+  .header {
+    background: var(--bg2);
+  }
+  .header nav .social-icons {
+    display: none;
+  }
+  .client .img-bg {
+    height: 100px;
+    width: 100px;
+  }
+  .client p {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .title h1 {
+    font-size: 28px;
+  }
+  .title p {
+    font-size: 12px;
+  }
+  .header {
+    background: var(--bg2);
+  }
+  .header .top {
+    display: none;
+  }
+  .header nav {
+    width: 100%;
+  }
+  .header nav .logo {
+    display: none;
+  }
+  .header nav .social-icons {
+    display: none;
+  }
+  .header nav .icon {
+    right: 20px;
+  }
+  .get-in-touch .box form .fname {
+    float: none;
+    width: 100%;
+  }
+  .get-in-touch .box form .lname {
+    float: none;
+    width: 100%;
+  }
+  .inbox .box .flex-space {
+    display: block;
+  }
+  .inbox .box .flex-space input {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  .inbox .box .flex-space .button {
+    padding: 1rem 2rem;
+  }
+  .plan .box {
+    -webkit-box-shadow: 0px 0 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 0 20px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

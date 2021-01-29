@@ -32,11 +32,22 @@
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- swiper-css -->
     <link rel="stylesheet" href="./css/swiper.min.css" />
 
+    <!-- wow-animation -->
+    <link rel="stylesheet" href="./css/animate.css" />
+
     <!-- styles-css -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive-css -->
+    <link rel="stylesheet" href="./css/responsive.css" />
 
     <title>Document</title>
   </head>
@@ -68,31 +79,34 @@
             </div>
             <hr />
             <div class="nav">
+              <div class="logo"><h1>LOGO</h1></div>
               <nav class="navbars">
                 <div>
-                  <div class="logo"><h1>LOGO</h1></div>
                   <label for="btn" class="icon">
                     <i class="fas fa-bars" style="margin-top: 35px"></i>
                   </label>
                   <input type="checkbox" id="btn" />
                   <ul>
+                    <li class="logos">
+                      <a href="#"
+                        ><div class="logo"><h1>LOGO</h1></div></a
+                      >
+                    </li>
                     <li><a href="index.html">Home</a></li>
                     <li>
-                      <label for="btn-1" class="show">About Us +</label>
-                      <a href="#">About Us</a>
+                      <label for="btn-1" class="show">About Guru +</label>
+                      <a href="#">About Guru</a>
                       <input type="checkbox" id="btn-1" />
                       <ul>
-                        <li><a href="consultant.html">सल्लाहकार समिति</a></li>
+                        <li><a href="consultant.html">About1</a></li>
                         <li>
-                          <a href="board-of-direstiors.html">सञ्चालक समिति</a>
+                          <a href="board-of-direstiors.html">About2</a>
                         </li>
                         <li>
-                          <a href="accounts-committee.html">लेखा समिति</a>
+                          <a href="accounts-committee.html">About3</a>
                         </li>
                         <li>
-                          <a href="management-committee.html"
-                            >व्यवस्थापन समिति</a
-                          >
+                          <a href="management-committee.html">About4</a>
                         </li>
                       </ul>
                     </li>
@@ -101,12 +115,12 @@
                       <a href="#">Services</a>
                       <input type="checkbox" id="btn-2" />
                       <ul>
-                        <li><a href="saving.html">बचत</a></li>
-                        <li><a href="loan.html">कर्जा</a></li>
-                        <li><a href="remittance.html">रेमिटेन्स</a></li>
+                        <li><a href="saving.html">Service1</a></li>
+                        <li><a href="loan.html">Service2</a></li>
+                        <li><a href="remittance.html">Service3</a></li>
                       </ul>
                     </li>
-                    <li><a href="activities.html">Download</a></li>
+                    <li><a href="activities.html">Mantra</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                   </ul>
@@ -217,15 +231,14 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
-
     <!-- slider-end -->
-    <!-- sign-start -->
 
+    <!-- sign-start -->
     <div class="sign margin">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="title">
+            <div class="title wow animate__animated animate__zoomInDown">
               <h1>Choose Your Zodiac Sign</h1>
               <p>
                 What’s Your Sign? Read Your Daily <br />
@@ -234,51 +247,75 @@
             </div>
             <div class="swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div
+                  class="swiper-slide wow animate__animated animate__slideInUp"
+                >
                   <img src="./images/horoscope_white_01.png" alt="" />
                   <h4>Aries</h4>
                 </div>
-                <div class="swiper-slide">
+                <div
+                  class="swiper-slide wow animate__animated animate__slideInUp animate__delay-1s"
+                >
                   <img src="./images/horoscope_white_02.png" alt="" />
                   <h4>Taurus</h4>
                 </div>
-                <div class="swiper-slide">
+                <div
+                  class="swiper-slide wow animate__animated animate__slideInUp animate__delay-2s"
+                >
                   <img src="./images/horoscope_white_03.png" alt="" />
                   <h4>Gemini</h4>
                 </div>
-                <div class="swiper-slide">
+                <div
+                  class="swiper-slide wow animate__animated animate__slideInUp animate__delay-3s"
+                >
                   <img src="./images/horoscope_white_04.png" alt="" />
                   <h4>Cancer</h4>
                 </div>
-                <div class="swiper-slide">
+                <div
+                  class="swiper-slide wow animate__animated animate__slideInUp animate__delay-4s"
+                >
                   <img src="./images/horoscope_white_05.png" alt="" />
                   <h4>Leo</h4>
                 </div>
-                <div class="swiper-slide">
+                <div
+                  class="swiper-slide wow animate__animated animate__slideInUp animate__delay-5s"
+                >
                   <img src="./images/horoscope_white_06.png" alt="" />
                   <h4>Virgo</h4>
                 </div>
-                <div class="swiper-slide">
+                <div
+                  class="swiper-slide wow animate__animated animate__slideInUp animate__delay-8s"
+                >
                   <img src="./images/horoscope_white_07.png" alt="" />
                   <h4>Libra</h4>
                 </div>
-                <div class="swiper-slide">
+                <div
+                  class="swiper-slide wow animate__animated animate__slideInUp animate__delay-9s"
+                >
                   <img src="./images/horoscope_white_08.png" alt="" />
                   <h4>Scorpio</h4>
                 </div>
-                <div class="swiper-slide">
+                <div
+                  class="swiper-slide wow animate__animated animate__slideInUp animate__delay-10s"
+                >
                   <img src="./images/horoscope_white_09.png" alt="" />
                   <h4>Saggitarius</h4>
                 </div>
-                <div class="swiper-slide">
+                <div
+                  class="swiper-slide wow animate__animated animate__slideInUp animate__delay-11s"
+                >
                   <img src="./images/horoscope_white_10.png" alt="" />
                   <h4>Capricorn</h4>
                 </div>
-                <div class="swiper-slide">
+                <div
+                  class="swiper-slide wow animate__animated animate__slideInUp animate__delay-12s"
+                >
                   <img src="./images/horoscope_white_11.png" alt="" />
                   <h4>Aquarius</h4>
                 </div>
-                <div class="swiper-slide">
+                <div
+                  class="swiper-slide wow animate__animated animate__slideInUp animate__delay-13s"
+                >
                   <img src="./images/horoscope_white_12.png" alt="" />
                   <h4>Pisces</h4>
                 </div>
@@ -304,7 +341,10 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="flex-space">
-                  <div class="title" style="text-align: left">
+                  <div
+                    class="title wow animate__animated animate__zoomInDown"
+                    style="text-align: left"
+                  >
                     <h1>18, Pausha</h1>
                     <p>
                       Shukla Paksha, Tritiya <br />
@@ -312,14 +352,19 @@
                       Kathmandu, Nepal
                     </p>
                   </div>
-                  <div class="title" style="text-align: right">
+                  <div
+                    class="title wow animate__animated animate__zoomInDown"
+                    style="text-align: right"
+                  >
                     <h1>16, January</h1>
                     <p>2021 Saturday</p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-lg-6">
-                    <div class="box">
+                    <div
+                      class="box wow animate__animated animate__bounceInLeft animate__delay-1s"
+                    >
                       <div class="panchang">
                         <h2>Panchang for Today</h2>
                         <div class="list">
@@ -346,7 +391,9 @@
                     </div>
                   </div>
                   <div class="col-lg-6">
-                    <div class="box">
+                    <div
+                      class="box wow animate__animated animate__bounceInRight animate__delay-1s"
+                    >
                       <div class="panchang">
                         <h2>Upcoming Upavas and Festivals</h2>
                         <div class="list">
@@ -384,13 +431,15 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                <div class="title">
+                <div class="title wow animate__animated animate__zoomInDown">
                   <h1>Let’s Make Some Magic</h1>
                   <p>Service We Provide</p>
                 </div>
                 <div class="row">
                   <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="item">
+                    <div
+                      class="item wow animate__animated animate__bounceInUp animate__delay-1s"
+                    >
                       <div
                         class="img-bg"
                         style="background-image: url(./images/img_1.jpg)"
@@ -410,7 +459,9 @@
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="item">
+                    <div
+                      class="item wow animate__animated animate__bounceInUp animate__delay-2s"
+                    >
                       <div
                         class="img-bg"
                         style="background-image: url(./images/img_2.jpg)"
@@ -430,7 +481,9 @@
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="item">
+                    <div
+                      class="item wow animate__animated animate__bounceInUp animate__delay-3s"
+                    >
                       <div
                         class="img-bg"
                         style="background-image: url(./images/img_8.jpg)"
@@ -461,19 +514,23 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                <div class="title">
+                <div class="title wow animate__animated animate__zoomInDown">
                   <h1>Discover The Stars Of Our Astro Conference</h1>
                   <p>Something About Us</p>
                 </div>
                 <div class="about-us">
                   <div class="row flex-center">
-                    <div class="col-lg-6">
+                    <div
+                      class="col-lg-6 wow animate__animated animate__bounceInRight animate__delay-1s"
+                    >
                       <div
                         class="img-bg"
                         style="background-image: url(./images/guru-jee.jpg)"
                       ></div>
                     </div>
-                    <div class="col-lg-6">
+                    <div
+                      class="col-lg-6 wow animate__animated animate__bounceInLeft animate__delay-1s"
+                    >
                       <h3>
                         Dr. Kailash Prasad <br />
                         Guru Jee
@@ -520,7 +577,9 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="row flex-center">
-                  <div class="col-lg-6 col-md-12">
+                  <div
+                    class="col-lg-6 col-md-12 wow animate__animated animate__bounceInLeft animate__delay-1s"
+                  >
                     <div class="box">
                       <h2>Get In Touch</h2>
                       <form action="">
@@ -542,8 +601,12 @@
                       </form>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
-                    <img src="./images/horoscpoe1.png" alt="" />
+                  <div
+                    class="col-lg-6 col-md-12 wow animate__animated animate__bounceInRight animate__delay-1s"
+                  >
+                    <div class="spin">
+                      <img src="./images/horoscpoe1.png" alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -559,7 +622,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="title">
+            <div class="title wow animate__animated animate__zoomInDown">
               <h1>What Clients Are Saying</h1>
             </div>
             <div class="swiper-container">
@@ -567,12 +630,14 @@
                 <div class="swiper-slide">
                   <div class="flex-center">
                     <div
-                      class="img-bg"
+                      class="img-bg wow animate__animated animate__fadeInUp animate__delay-1s"
                       style="background-image: url(./images/team-2.jpg)"
                     ></div>
                   </div>
                   <div class="content flex-center">
-                    <p>
+                    <p
+                      class="wow animate__animated animate__fadeInUp animate__delay-2s"
+                    >
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Illo laudantium nemo, atque sunt assumenda autem officiis,
                       quibusdam provident commodi animi consequatur ducimus,
@@ -580,17 +645,23 @@
                       reprehenderit adipisci.
                     </p>
                   </div>
-                  <h2>Hello Worlds!!!</h2>
+                  <h2
+                    class="wow animate__animated animate__fadeInUp animate__delay-3s"
+                  >
+                    Hello Worlds!!!
+                  </h2>
                 </div>
                 <div class="swiper-slide">
                   <div class="flex-center">
                     <div
-                      class="img-bg"
+                      class="img-bg wow animate__animated animate__fadeInUp animate__delay-1s"
                       style="background-image: url(./images/profile.jpg)"
                     ></div>
                   </div>
                   <div class="content flex-center">
-                    <p>
+                    <p
+                      class="wow animate__animated animate__fadeInUp animate__delay-2s"
+                    >
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Illo laudantium nemo, atque sunt assumenda autem officiis,
                       quibusdam provident commodi animi consequatur ducimus,
@@ -598,17 +669,23 @@
                       reprehenderit adipisci.
                     </p>
                   </div>
-                  <h2>Hello Worlds!!!</h2>
+                  <h2
+                    class="wow animate__animated animate__fadeInUp animate__delay-3s"
+                  >
+                    Hello Worlds!!!
+                  </h2>
                 </div>
                 <div class="swiper-slide">
                   <div class="flex-center">
                     <div
-                      class="img-bg"
+                      class="img-bg wow animate__animated animate__fadeInUp animate__delay-1s"
                       style="background-image: url(./images/team-4.jpg)"
                     ></div>
                   </div>
                   <div class="content flex-center">
-                    <p>
+                    <p
+                      class="wow animate__animated animate__fadeInUp animate__delay-2s"
+                    >
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Illo laudantium nemo, atque sunt assumenda autem officiis,
                       quibusdam provident commodi animi consequatur ducimus,
@@ -616,7 +693,11 @@
                       reprehenderit adipisci.
                     </p>
                   </div>
-                  <h2>Hello Worlds!!!</h2>
+                  <h2
+                    class="wow animate__animated animate__fadeInUp animate__delay-3s"
+                  >
+                    Hello Worlds!!!
+                  </h2>
                 </div>
               </div>
             </div>
@@ -649,12 +730,14 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="title">
+            <div class="title wow animate__animated animate__zoomInDown">
               <h1>Purchase Monthly Plan</h1>
               <p>What’s Your Sign? Read Your Daily Horoscope Today</p>
             </div>
             <div class="row">
-              <div class="col-lg-4 col-md-6">
+              <div
+                class="col-lg-4 col-md-6 wow animate__animated animate__flipInY animate__delay-1s"
+              >
                 <div class="box">
                   <i class="fas fa-gem"></i>
                   <h2>Starter</h2>
@@ -674,7 +757,9 @@
                   <a href="#" class="button">Purchase</a>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
+              <div
+                class="col-lg-4 col-md-6 wow animate__animated animate__flipInY animate__delay-2s"
+              >
                 <div class="box mid">
                   <i class="fas fa-gem"></i>
                   <h2>Pro</h2>
@@ -694,7 +779,9 @@
                   <a href="#" class="button">Purchase</a>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-12">
+              <div
+                class="col-lg-4 col-md-12 wow animate__animated animate__flipInY animate__delay-3s"
+              >
                 <div class="box">
                   <i class="fas fa-gem"></i>
                   <h2>Starter</h2>
@@ -728,7 +815,9 @@
           <div class="col-lg-12">
             <footer>
               <div class="row">
-                <div class="col-lg-3">
+                <div
+                  class="col-lg-3 wow animate__animated animate__fadeInUp animate__delay-1s"
+                >
                   <div class="logo">
                     <h1>LOGO</h1>
                     <div class="info">
@@ -744,7 +833,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3">
+                <div
+                  class="col-lg-3 wow animate__animated animate__fadeInUp animate__delay-2s"
+                >
                   <div class="inner">
                     <h6>OUR SERVICES</h6>
                     <ul>
@@ -766,7 +857,9 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-lg-3">
+                <div
+                  class="col-lg-3 wow animate__animated animate__fadeInUp animate__delay-3s"
+                >
                   <div class="inner">
                     <h6>USEFULL LINKS</h6>
                     <ul>
@@ -780,7 +873,9 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-lg-3">
+                <div
+                  class="col-lg-3 wow animate__animated animate__fadeInUp animate__delay-4s"
+                >
                   <h6>Social LINKS</h6>
                   <div class="social-links">
                     <a href="#"
@@ -813,7 +908,11 @@
     <!-- footer-end -->
 
     <script src="./js/swiper.min.js"></script>
+    <script src="./js/wow.min.js"></script>
     <script>
+      // wow-animation
+      new WOW().init();
+
       // date&time
       function updateClock() {
         let now = new Date();
@@ -860,6 +959,13 @@
         window.setInterval('updateClock()', 1);
       }
 
+      const navbar = document.querySelector('.navbars');
+      window.onscroll = () => {
+        this.scrollY > 250
+          ? navbar.classList.add('sticky')
+          : navbar.classList.remove('sticky');
+      };
+
       // slider
       var swiper = new Swiper('.slider .swiper-container', {
         autoplay: {
@@ -877,7 +983,7 @@
         spaceBetween: 10,
         loop: true,
         autoplay: {
-          delay: 4000,
+          delay: 6000,
           disableOnInteraction: false,
         },
         navigation: {
@@ -903,7 +1009,7 @@
       // client
       var swiper = new Swiper('.client .swiper-container', {
         autoplay: {
-          delay: 4000,
+          delay: 6000,
           disableOnInteraction: false,
         },
       });
