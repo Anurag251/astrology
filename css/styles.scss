@@ -138,8 +138,9 @@ p {
     top: 0;
     left: 0;
     background: var(--bg2);
-    padding: 0 6rem;
+    padding: 0 2rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease;
 
     .logos {
       display: block;
@@ -170,7 +171,6 @@ p {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    transition: all 0.5s ease;
 
     .social-icons {
       color: var(--primary);
@@ -457,6 +457,42 @@ p {
 }
 /******* calendar-end *******/
 
+/******* healing-start *******/
+
+.healing {
+  .title {
+    margin-bottom: 2rem;
+  }
+  .img {
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+
+      .swiper-slide {
+        .img-bg {
+          height: 400px;
+        }
+      }
+    }
+  }
+
+  .info {
+    .swiper-container {
+      width: 100%;
+      height: 300px;
+
+      h2 {
+        color: var(--main);
+      }
+      p {
+        margin: 0 0 3rem;
+      }
+    }
+  }
+}
+
+/******* healing-end *******/
+
 /******* service-start *******/
 
 .service {
@@ -507,6 +543,7 @@ p {
 }
 
 /******* service-end *******/
+
 /******* about-start *******/
 
 .about {
@@ -543,6 +580,7 @@ p {
 }
 
 /******* about-end *******/
+
 /******* get-in-touch-start *******/
 
 .get-in-touch {

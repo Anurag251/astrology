@@ -163,9 +163,11 @@ p {
   top: 0;
   left: 0;
   background: var(--bg2);
-  padding: 0 6rem;
+  padding: 0 2rem;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .header .sticky .logos {
@@ -201,8 +203,6 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .header nav .social-icons {
@@ -494,6 +494,34 @@ p {
 }
 
 /******* calendar-end *******/
+/******* healing-start *******/
+.healing .title {
+  margin-bottom: 2rem;
+}
+
+.healing .img .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.healing .img .swiper-container .swiper-slide .img-bg {
+  height: 400px;
+}
+
+.healing .info .swiper-container {
+  width: 100%;
+  height: 300px;
+}
+
+.healing .info .swiper-container h2 {
+  color: var(--main);
+}
+
+.healing .info .swiper-container p {
+  margin: 0 0 3rem;
+}
+
+/******* healing-end *******/
 /******* service-start *******/
 .service .item {
   margin: 1rem 0;

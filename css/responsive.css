@@ -1,3 +1,12 @@
+@media only screen and (max-width: 1210px) {
+  .healing .info {
+    margin-top: 2rem;
+  }
+  .healing .info .swiper-container {
+    height: 400px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .header nav .social-icons {
     display: none;
@@ -32,6 +41,12 @@
   }
   .client p {
     width: 95%;
+  }
+  .healing .info {
+    margin-top: 2rem;
+  }
+  .healing .info .swiper-container {
+    height: 400px;
   }
 }
 

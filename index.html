@@ -426,6 +426,114 @@
         </div>
         <!-- calendar-end -->
 
+        <!-- healing-start -->
+        <div class="healing margin">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="title wow animate__animated animate__zoomInDown">
+                  <h1>Healing</h1>
+                </div>
+                <div class="row flex-center">
+                  <div
+                    class="col-lg-6 wow animate__animated animate__bounceInRight animate__delay-1s"
+                  >
+                    <div class="img">
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div
+                              class="img-bg"
+                              style="
+                                background-image: url(./images/healing1.jpg);
+                              "
+                            ></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div
+                              class="img-bg"
+                              style="
+                                background-image: url(./images/healing2.jpg);
+                              "
+                            ></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div
+                              class="img-bg"
+                              style="
+                                background-image: url(./images/healing3.jpg);
+                              "
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-6 wow animate__animated animate__bounceInLeft animate__delay-2s"
+                  >
+                    <div class="info">
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <h2>Kundali Dosh</h2>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Enim numquam consectetur ipsam laborum esse,
+                              debitis nesciunt magnam id nostrum dolorem labore
+                              nobis! Alias consectetur expedita nisi libero
+                              iusto optio inventore! Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Enim numquam
+                              consectetur ipsam laborum esse, debitis nesciunt
+                              magnam id nostrum dolorem labore nobis! Alias
+                              consectetur expedita nisi libero iusto optio
+                              inventore!
+                            </p>
+                            <a href="#" class="button">More</a>
+                          </div>
+                          <div class="swiper-slide">
+                            <h2>Kundali Dosh</h2>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Enim numquam consectetur ipsam laborum esse,
+                              debitis nesciunt magnam id nostrum dolorem labore
+                              nobis! Alias consectetur expedita nisi libero
+                              iusto optio inventore! Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Enim numquam
+                              consectetur ipsam laborum esse, debitis nesciunt
+                              magnam id nostrum dolorem labore nobis! Alias
+                              consectetur expedita nisi libero iusto optio
+                              inventore!
+                            </p>
+                            <a href="#" class="button">More</a>
+                          </div>
+                          <div class="swiper-slide">
+                            <h2>Kundali Dosh</h2>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Enim numquam consectetur ipsam laborum esse,
+                              debitis nesciunt magnam id nostrum dolorem labore
+                              nobis! Alias consectetur expedita nisi libero
+                              iusto optio inventore! Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Enim numquam
+                              consectetur ipsam laborum esse, debitis nesciunt
+                              magnam id nostrum dolorem labore nobis! Alias
+                              consectetur expedita nisi libero iusto optio
+                              inventore!
+                            </p>
+                            <a href="#" class="button">More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- healing-end -->
+
         <!-- service-start -->
         <div class="service margin">
           <div class="container">
@@ -529,7 +637,7 @@
                       ></div>
                     </div>
                     <div
-                      class="col-lg-6 wow animate__animated animate__bounceInLeft animate__delay-1s"
+                      class="col-lg-6 wow animate__animated animate__bounceInLeft animate__delay-2s"
                     >
                       <h3>
                         Dr. Kailash Prasad <br />
@@ -708,7 +816,9 @@
     <!-- client-end -->
 
     <!-- inbox-start -->
-    <div class="inbox margin">
+    <div
+      class="inbox margin wow animate__animated animate__flipInX animate__delay-1s"
+    >
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -1003,6 +1113,28 @@
             slidesPerView: 6,
             spaceBetween: 10,
           },
+        },
+      });
+
+      // healing
+      var swiper = new Swiper('.healing .img .swiper-container', {
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+      var swiper = new Swiper('.healing .info .swiper-container', {
+        direction: 'vertical',
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
         },
       });
 
