@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- swiper-css -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+
+    <!-- wow-animation -->
+    <link rel="stylesheet" href="./css/animate.css" />
+
+    <!-- styles-css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive-css -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <title>Document</title>
+  </head>
+  <body onload="initClock()">
+    <!-- header-start -->
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="top">
+              <div class="logo">
+                <h1>LOGO</h1>
+              </div>
+              <div class="time">
+                <h6>
+                  <strong>
+                    <span id="hour">00</span> : <span id="minute">00</span> :
+                    <span id="second">00</span>
+                  </strong>
+                </h6>
+                <p>
+                  <span id="day">Day</span> <span id="month">Month</span>
+                  <span id="date">00</span> <span id="year">Year</span>
+                </p>
+              </div>
+              <div class="appo">
+                <a class="button" href="#">Appoinment</a>
+              </div>
+            </div>
+            <hr />
+            <div class="nav">
+              <div class="logo"><h1>LOGO</h1></div>
+              <nav class="navbars">
+                <div>
+                  <label for="btn" class="icon">
+                    <i class="fas fa-bars"></i>
+                  </label>
+                  <input type="checkbox" id="btn" />
+                  <ul>
+                    <li class="logos">
+                      <a href="#"
+                        ><div class="logo"><h1>LOGO</h1></div></a
+                      >
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                      <label for="btn-1" class="show">About Guru +</label>
+                      <a href="#">About Guru</a>
+                      <input type="checkbox" id="btn-1" />
+                      <ul>
+                        <li><a href="#">About1</a></li>
+                        <li>
+                          <a href="#">About2</a>
+                        </li>
+                        <li>
+                          <a href="#">About3</a>
+                        </li>
+                        <li>
+                          <a href="#">About4</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <label for="btn-2" class="show">Services +</label>
+                      <a href="services.html">Services</a>
+                      <input type="checkbox" id="btn-2" />
+                      <ul>
+                        <li><a href="services.html">Service1</a></li>
+                        <li><a href="services.html">Service2</a></li>
+                        <li><a href="services.html">Service3</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="mantra.html">Mantra</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header-end -->
+
+    <div class="page-bg img-bg">
+      <div class="page-name">
+        <div>
+          <h1>Services</h1>
+        </div>
+      </div>
+      <img src="./images/footer-imag.png" alt="" />
+    </div>
+
+    <div class="services-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="services margin">
+              <div class="row flex-center">
+                <div
+                  class="col-lg-7 wow animate__animated animate__bounceInRight"
+                >
+                  <div class="box">
+                    <h1>Kundali</h1>
+                    <ul>
+                      <li class="flex-space">
+                        <div class="service-name">Kundali Making Normal</div>
+                        <div class="price">NRS - 3,500</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Kundali Making Advance</div>
+                        <div class="price">NRS - 15,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Kundali M by Lal Kitab</div>
+                        <div class="price">NRS - 25,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Kundali JAGARAN (each)</div>
+                        <div class="price">NRS - 25,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Kundali READING</div>
+                        <div class="price">NRS - 3,100</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Kundali FALIT</div>
+                        <div class="price">NRS - 5,100</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Kundali Match Making</div>
+                        <div class="price">NRS - 5,500</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">
+                          Kundali - Family Package (5 Members)
+                        </div>
+                        <div class="price">NRS - 11,000</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-5 wow animate__animated animate__bounceInLeft"
+                >
+                  <div
+                    class="img-bg"
+                    style="background-image: url(./images/img_2.jpg)"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="services margin">
+              <div class="row flex-center">
+                <div
+                  class="col-lg-5 wow animate__animated animate__bounceInRight"
+                >
+                  <div
+                    class="img-bg"
+                    style="background-image: url(./images/img_1.jpg)"
+                  ></div>
+                </div>
+                <div
+                  class="col-lg-7 wow animate__animated animate__bounceInLeft"
+                >
+                  <div class="box">
+                    <h1>Vastu Visit</h1>
+                    <ul>
+                      <li class="flex-space">
+                        <div class="service-name">Vastu Visit Home</div>
+                        <div class="price">NRS - 15,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Vastu Visit Office</div>
+                        <div class="price">NRS - 21,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Vastu Visit Factory</div>
+                        <div class="price">NRS - 31000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Vastu Visit National</div>
+                        <div class="price">NRS - 5,5,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">
+                          Vastu Visit International
+                        </div>
+                        <div class="price">NRS - 1,05,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">
+                          National + 5 Family Members Kundali Reading
+                        </div>
+                        <div class="price">NRS - 25,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">
+                          International + 5 Family Members Kundali Reading
+                        </div>
+                        <div class="price">NRS - 1,10,000</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services margin">
+              <div class="row flex-center">
+                <div
+                  class="col-lg-7 wow animate__animated animate__bounceInRight"
+                >
+                  <div class="box">
+                    <h1>Healing – Full Session</h1>
+                    <ul>
+                      <li class="flex-space">
+                        <div class="service-name">Health Problem Solution</div>
+                        <div class="price">NRS - 51,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Relationship Solution</div>
+                        <div class="price">NRS - 51,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Family Problem Solution</div>
+                        <div class="price">NRS - 51,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Property Problem</div>
+                        <div class="price">NRS - 51,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Wealth Problem</div>
+                        <div class="price">NRS - 51,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Black Magic Remove</div>
+                        <div class="price">NRS - 51,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Career Problem Solution</div>
+                        <div class="price">NRS - 51,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Business Success</div>
+                        <div class="price">NRS - 51,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Immunity Bust</div>
+                        <div class="price">NRS - 31,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Pain Relief</div>
+                        <div class="price">NRS - 31,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Skin disorder</div>
+                        <div class="price">NRS - 31,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Stress Free</div>
+                        <div class="price">NRS - 31,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Visa Problem Solution</div>
+                        <div class="price">NRS - 31,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Fear Free</div>
+                        <div class="price">NRS - 31,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Anxiety</div>
+                        <div class="price">NRS - 31,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Tension Free</div>
+                        <div class="price">NRS - 31,000</div>
+                      </li>
+                      <li class="flex-space">
+                        <div class="service-name">Addiction</div>
+                        <div class="price">NRS - 31,000</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-5 wow animate__animated animate__bounceInLeft"
+                >
+                  <div
+                    class="img-bg"
+                    style="background-image: url(./images/img_8.jpg)"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- plan-start -->
+    <div class="plan margin">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title wow animate__animated animate__zoomInDown">
+              <h1>Purchase Monthly Plan</h1>
+              <p>What’s Your Sign? Read Your Daily Horoscope Today</p>
+            </div>
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-6 wow animate__animated animate__flipInY animate__delay-1s"
+              >
+                <div class="box">
+                  <i class="fas fa-gem"></i>
+                  <h2>Starter</h2>
+                  <h6>Starting Business</h6>
+                  <ul>
+                    <li>Ask One Question</li>
+                    <li>Half-Hour Reading</li>
+                    <li>Newborn / Child Reading</li>
+                    <li>Relationship Reading</li>
+                  </ul>
+                  <h1>
+                    <sup>$</sup>25<sub
+                      >Per <br />
+                      Month</sub
+                    >
+                  </h1>
+                  <a href="#" class="button">Purchase</a>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 wow animate__animated animate__flipInY animate__delay-2s"
+              >
+                <div class="box mid">
+                  <i class="fas fa-gem"></i>
+                  <h2>Pro</h2>
+                  <h6>Starting Business</h6>
+                  <ul>
+                    <li>Ask One Question</li>
+                    <li>Half-Hour Reading</li>
+                    <li>Newborn / Child Reading</li>
+                    <li>Relationship Reading</li>
+                  </ul>
+                  <h1>
+                    <sup>$</sup>73<sub
+                      >Per <br />
+                      Month</sub
+                    >
+                  </h1>
+                  <a href="#" class="button">Purchase</a>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-12 wow animate__animated animate__flipInY animate__delay-3s"
+              >
+                <div class="box">
+                  <i class="fas fa-gem"></i>
+                  <h2>Starter</h2>
+                  <h6>Starting Business</h6>
+                  <ul>
+                    <li>Ask One Question</li>
+                    <li>Half-Hour Reading</li>
+                    <li>Newborn / Child Reading</li>
+                    <li>Relationship Reading</li>
+                  </ul>
+                  <h1>
+                    <sup>$</sup>109<sub
+                      >Per <br />
+                      Month</sub
+                    >
+                  </h1>
+                  <a href="#" class="button">Purchase</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- plan-end -->
+
+    <!-- footer-start -->
+    <div class="footer margin">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <footer>
+              <div class="row">
+                <div class="col-lg-3 wow animate__animated animate__fadeInUp">
+                  <div class="logo">
+                    <h1>LOGO</h1>
+                    <div class="info">
+                      <h6>+1800-123-123</h6>
+                      <p>
+                        Donec id elit non mi porta gravida at eget metus. Donec
+                        id elit non Vestibulum id ligula porta felis euism od
+                        semper.
+                      </p>
+                      <a href="#" class="read-more"
+                        >Read More <i class="fas fa-long-arrow-alt-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 wow animate__animated animate__fadeInUp animate__delay-1s"
+                >
+                  <div class="inner">
+                    <h6>OUR SERVICES</h6>
+                    <ul>
+                      <li><i class="fas fa-caret-right"></i> How to book</li>
+                      <li>
+                        <i class="fas fa-caret-right"></i> General letting
+                      </li>
+                      <li><i class="fas fa-caret-right"></i> conditions</li>
+                      <li>
+                        <i class="fas fa-caret-right"></i> Jobs and careers
+                      </li>
+                      <li>
+                        <i class="fas fa-caret-right"></i> Travel agent
+                        resources
+                      </li>
+                      <li><i class="fas fa-caret-right"></i> Our Agents</li>
+                      <li><i class="fas fa-caret-right"></i> About Us</li>
+                      <li><i class="fas fa-caret-right"></i> Contact Us</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 wow animate__animated animate__fadeInUp animate__delay-2s"
+                >
+                  <div class="inner">
+                    <h6>USEFULL LINKS</h6>
+                    <ul>
+                      <li><i class="fas fa-caret-right"></i> Home</li>
+                      <li><i class="fas fa-caret-right"></i> About us</li>
+                      <li><i class="fas fa-caret-right"></i> horoscope</li>
+                      <li><i class="fas fa-caret-right"></i> services</li>
+                      <li><i class="fas fa-caret-right"></i> shop</li>
+                      <li><i class="fas fa-caret-right"></i> news</li>
+                      <li><i class="fas fa-caret-right"></i> Contact Us</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 wow animate__animated animate__fadeInUp animate__delay-3s"
+                >
+                  <h6>Social LINKS</h6>
+                  <div class="social-links">
+                    <a href="#"
+                      ><div class="icons flex-center">
+                        <i class="fab fa-facebook"></i></div
+                    ></a>
+                    <a href="#">
+                      <div class="icons flex-center">
+                        <i class="fab fa-twitter"></i>
+                      </div>
+                    </a>
+                    <a href="#"
+                      ><div class="icons flex-center">
+                        <i class="fab fa-youtube"></i></div
+                    ></a>
+                    <a href="#">
+                      <div class="icons flex-center">
+                        <i class="fab fa-instagram"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <div class="copy-right">© Copyright 2020, All right Reserved</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer-end -->
+
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      // wow-animation
+      new WOW().init();
+
+      // stickey-nav
+      const navbar = document.querySelector('.navbars');
+      window.onscroll = () => {
+        this.scrollY > 250
+          ? navbar.classList.add('sticky')
+          : navbar.classList.remove('sticky');
+      };
+    </script>
+  </body>
+</html>

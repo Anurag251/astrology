@@ -48,6 +48,9 @@
   .healing .info .swiper-container {
     height: 400px;
   }
+  .services-page .box {
+    padding: 2rem;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -98,6 +101,9 @@
             box-shadow: 0px 0 20px rgba(0, 0, 0, 0.4);
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  .services-page .box {
+    padding: 2rem 1rem;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

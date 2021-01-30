@@ -126,6 +126,10 @@ p {
   z-index: 2;
 }
 
+.header hr {
+  margin: 0.5rem 0;
+}
+
 .header .top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,7 +141,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   color: var(--primary);
 }
 
@@ -170,6 +174,14 @@ p {
   transition: all 0.5s ease;
 }
 
+.header .sticky .social-icons {
+  line-height: 80px;
+}
+
+.header .sticky ul li {
+  line-height: 80px;
+}
+
 .header .sticky .logos {
   display: block;
 }
@@ -184,12 +196,16 @@ p {
   margin: 1rem;
 }
 
+.header .sticky .icon {
+  z-index: 11;
+}
+
 .header .sticky .icon i {
   position: absolute;
   top: 0;
   right: 0;
   margin: 0;
-  padding: 1rem;
+  padding: 0.4rem;
   background-color: #fff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -207,10 +223,10 @@ p {
 
 .header nav .social-icons {
   color: var(--primary);
-  line-height: 70px;
+  line-height: 50px;
   text-decoration: none;
   font-size: 18px;
-  padding: 8px 12px;
+  padding: 0 12px;
 }
 
 .header nav .social-icons a {
@@ -243,7 +259,7 @@ p {
 
 .header nav ul li a {
   color: var(--primary);
-  line-height: 70px;
+  line-height: 50px;
   text-decoration: none;
   font-size: 18px;
   padding: 8px 12px;
@@ -295,6 +311,9 @@ p {
 }
 
 @media all and (max-width: 769px) {
+  .header hr {
+    display: none;
+  }
   .header .top {
     display: none;
     margin: 0;
@@ -302,9 +321,11 @@ p {
   .header .nav {
     width: 100%;
     background: var(--bg2) !important;
+    padding-top: 1rem;
   }
   .header .nav .logo {
     display: block;
+    line-height: 10px;
   }
   .header .nav nav .social-icons {
     display: none;
@@ -312,10 +333,6 @@ p {
   .header nav ul {
     margin-right: 0px;
     float: left;
-  }
-  .header nav .logo {
-    padding-left: 30px;
-    width: 100%;
   }
   .header .show + a,
   .header ul {
@@ -347,7 +364,7 @@ p {
     position: absolute;
     top: 0;
     right: 100px;
-    line-height: 70px;
+    line-height: 60px;
     cursor: pointer;
     font-size: 25px;
   }
@@ -987,5 +1004,128 @@ p {
 }
 
 /******* footer-end *******/
+.page-bg {
+  position: relative;
+  background-image: url(../images/page-bg.jpg);
+  height: 600px;
+}
+
+.page-bg .page-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.page-bg .page-name h1 {
+  margin-top: 50px;
+  font-size: 90px;
+  color: var(--main);
+}
+
+.page-bg img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/******* services-page-start *******/
+.services-page .box {
+  margin-top: 1rem;
+  padding: 2rem 4rem;
+  border: 0.7px solid #000;
+}
+
+.services-page .box h1 {
+  padding: 1rem 0 2rem 0;
+  color: var(--main);
+}
+
+.services-page .box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-page .box ul li:nth-child(1) {
+  border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.services-page .box ul li {
+  line-height: 3.5rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.services-page .box ul li .service-name {
+  font-size: 14px;
+}
+
+.services-page .box ul li .price {
+  color: var(--sec);
+}
+
+.services-page .img-bg {
+  margin-top: 1rem;
+  height: 700px;
+}
+
+/******* services-page-end *******/
+/******* blog-page-start *******/
+.blog-page .blogs .img-bg {
+  height: 270px;
+  margin-top: 1rem;
+}
+
+.blog-page .blogs .info {
+  margin-top: 1rem;
+}
+
+.blog-page .blogs .info p {
+  margin-top: 1rem;
+}
+
+.blog-page .blogs .info h6 {
+  font-size: 12px;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin: 1rem 0 3rem;
+}
+
+.blog-page .blog-list .col-4 {
+  background-color: var(--bg);
+}
+
+.blog-page .blog-list .flex-center {
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  padding: 0 0.3rem;
+}
+
+.blog-page .blog-list h6 {
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.blog-page .blog-list .img-bg {
+  height: 80px;
+  margin: 1rem 0;
+}
+
+/******* blog-page-end *******/
+/*******  *******/
 /*******  *******/
 /*# sourceMappingURL=styles.css.map */
