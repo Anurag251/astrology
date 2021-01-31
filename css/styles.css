@@ -68,6 +68,24 @@ p {
           align-items: center;
 }
 
+.line {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 4rem 0;
+}
+
+.line:after {
+  content: '..............................................................................................................';
+  color: var(--sec);
+  font-weight: 800;
+  font-size: 10px;
+  letter-spacing: 15px;
+  display: table;
+  clear: both;
+  width: 100%;
+}
+
 .button {
   font-size: 14px;
   padding: 0.8rem 1.5rem;
@@ -180,6 +198,16 @@ p {
 
 .header .sticky ul li {
   line-height: 80px;
+}
+
+.header .sticky ul li:hover > ul {
+  top: 80px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.header .sticky ul li ul li {
+  line-height: 50px;
 }
 
 .header .sticky .logos {
@@ -310,7 +338,7 @@ p {
   margin-left: 40px;
 }
 
-@media all and (max-width: 769px) {
+@media all and (max-width: 858px) {
   .header hr {
     display: none;
   }
@@ -1126,6 +1154,388 @@ p {
 }
 
 /******* blog-page-end *******/
-/*******  *******/
-/*******  *******/
+/******* gallery-page-start *******/
+.gallery-page .gallery ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.gallery-page .gallery ul li {
+  margin: 0 0.5rem;
+  font-size: 14px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  border: 1px solid var(--main);
+  -webkit-box-shadow: 0 0 0 0em var(--main) inset;
+          box-shadow: 0 0 0 0em var(--main) inset;
+  background: #ffffff;
+  color: var(--main);
+  -webkit-transition: all 450ms ease;
+  transition: all 450ms ease;
+  cursor: pointer;
+}
+
+.gallery-page .gallery ul li:hover {
+  -webkit-box-shadow: 0 0 0 3em var(--main) inset;
+          box-shadow: 0 0 0 3em var(--main) inset;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.gallery-page .gallery ul li.on {
+  border: 1px solid var(--main);
+  -webkit-box-shadow: 0 0 0 3em var(--main) inset;
+          box-shadow: 0 0 0 3em var(--main) inset;
+  background: #ffffff;
+  color: #ffffff;
+}
+
+.gallery-page .gallery .images-list .box {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.gallery-page .gallery .images-list .img-bg {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.gallery-page .gallery .images-list .img-bg:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.gallery-page .gallery .images-list .img-bg:hover:after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-page .gallery .images-list .img-bg:hover .icons i {
+  -webkit-animation: icon 0.8s;
+          animation: icon 0.8s;
+  opacity: 1;
+  top: 47%;
+}
+
+@-webkit-keyframes icon {
+  0% {
+    opacity: 0;
+    top: 20%;
+  }
+  40% {
+    top: 55%;
+    opacity: 1;
+  }
+  100% {
+    top: 47%;
+    opacity: 1;
+  }
+}
+
+@keyframes icon {
+  0% {
+    opacity: 0;
+    top: 20%;
+  }
+  40% {
+    top: 55%;
+    opacity: 1;
+  }
+  100% {
+    top: 47%;
+    opacity: 1;
+  }
+}
+
+.gallery-page .gallery .images-list .img-bg:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.gallery-page .gallery .images-list .img-bg .icons i {
+  position: absolute;
+  top: 20%;
+  left: 47%;
+  z-index: 2;
+  color: #fff;
+  font-size: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.gallery-page .gallery .images-list .img-bg .icons i:hover {
+  -webkit-transform: rotate(360deg) translateZ(0);
+          transform: rotate(360deg) translateZ(0);
+  font-size: 30px;
+  color: var(--main);
+}
+
+/******* gallery-page-end *******/
+/******* contact-page-start *******/
+.contact-page .map {
+  width: 100%;
+  height: 380px;
+}
+
+.contact-page .map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.contact-page .details h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 1.5px;
+}
+
+.contact-page .details h1 {
+  color: var(--main);
+  margin: 1rem 0;
+}
+
+.contact-page .details p {
+  text-align: justify;
+  margin: 1.5rem 0;
+}
+
+.contact-page .details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-page .details ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 2rem;
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--sec);
+  letter-spacing: 1.5px;
+}
+
+.contact-page .details ul li i {
+  margin-right: 1rem;
+  color: #000;
+  font-size: 16px;
+}
+
+.contact-page .details ul li i.fa-phone {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.contact-page .get-in-touch {
+  margin: 0;
+}
+
+.contact-page .get-in-touch .box {
+  background-color: var(--bg);
+}
+
+.contact-page .get-in-touch .box input {
+  border: none;
+}
+
+.contact-page .get-in-touch .box textarea {
+  border: none;
+  height: 200px;
+}
+
+/******* contact-page-end *******/
+/******* about-page-start *******/
+.about-page .about-us h3 {
+  margin-top: 1rem;
+  color: var(--main);
+  font-size: 40px;
+}
+
+.about-page .about-us .astro-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+}
+
+.about-page .about-us .astro-services .kundali {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.about-page .about-us .astro-services .kundali .icon {
+  margin: 0 5px 0 0;
+  color: var(--sec);
+}
+
+.about-page .about-us .astro-services .vastu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.about-page .about-us .astro-services .vastu .icon {
+  margin: 0 5px 0 20px;
+  color: var(--sec);
+}
+
+.about-page .about-us .astro-services .healing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.about-page .about-us .astro-services .healing .icon {
+  margin: 0 5px 0 20px;
+  color: var(--sec);
+}
+
+.about-page .about-us p {
+  text-align: justify;
+}
+
+.about-page .about-us .social-links {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-page .about-us .social-links .icons {
+  height: 45px;
+  width: 45px;
+  font-size: 16px;
+  border-radius: 50%;
+  border: 1.5px solid var(--main);
+  color: var(--main);
+  -webkit-box-shadow: 0 0 0 0em var(--main) inset;
+          box-shadow: 0 0 0 0em var(--main) inset;
+  -webkit-transition: all 450ms ease;
+  transition: all 450ms ease;
+  margin-right: 1rem;
+}
+
+.about-page .about-us .social-links .icons:hover {
+  -webkit-box-shadow: 0 0 0 3em var(--main) inset;
+          box-shadow: 0 0 0 3em var(--main) inset;
+  color: #ffffff;
+}
+
+.about-page .about-us .about-gurujee {
+  margin-top: 2rem;
+}
+
+.about-page .about-us .box {
+  overflow: hidden;
+}
+
+.about-page .about-us .img-bg {
+  margin-top: 1rem;
+  height: 600px;
+}
+
+.about-page .about-us .img-bg:hover {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+          transform: scale3d(1.1, 1.1, 1.1);
+  -webkit-transition: -webkit-transform 8s cubic-bezier(0.95, 0.95, 0.95, 0.95);
+  transition: -webkit-transform 8s cubic-bezier(0.95, 0.95, 0.95, 0.95);
+  transition: transform 8s cubic-bezier(0.95, 0.95, 0.95, 0.95);
+  transition: transform 8s cubic-bezier(0.95, 0.95, 0.95, 0.95), -webkit-transform 8s cubic-bezier(0.95, 0.95, 0.95, 0.95);
+}
+
+/******* about-page-end *******/
+/******* client-page-start *******/
+.client-page .client-list .col-lg-3 {
+  background-color: var(--bg);
+}
+
+.client-page .client-list .flex-center {
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  padding: 0 0.3rem;
+}
+
+.client-page .client-list .img-bg {
+  height: 250px;
+  margin: 1rem 0;
+}
+
+.client-page .client-list h4 {
+  font-size: 30px;
+}
+
+.client-page .client-list p {
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+/******* client-page-end *******/
 /*# sourceMappingURL=styles.css.map */

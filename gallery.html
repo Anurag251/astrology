@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- swiper-css -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+
+    <!-- wow-animation -->
+    <link rel="stylesheet" href="./css/animate.css" />
+
+    <!-- styles-css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- responsive-css -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <!-- lightbox-css -->
+    <link rel="stylesheet" href="./css/lightbox.min.css" />
+
+    <title>Document</title>
+  </head>
+  <body onload="initClock()">
+    <!-- header-start -->
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="top">
+              <div class="logo">
+                <h1>LOGO</h1>
+              </div>
+              <div class="time">
+                <h6>
+                  <strong>
+                    <span id="hour">00</span> : <span id="minute">00</span> :
+                    <span id="second">00</span>
+                  </strong>
+                </h6>
+                <p>
+                  <span id="day">Day</span> <span id="month">Month</span>
+                  <span id="date">00</span> <span id="year">Year</span>
+                </p>
+              </div>
+              <div class="appo">
+                <a class="button" href="#">Appoinment</a>
+              </div>
+            </div>
+            <hr />
+            <div class="nav">
+              <div class="logo"><h1>LOGO</h1></div>
+              <nav class="navbars">
+                <div>
+                  <label for="btn" class="icon">
+                    <i class="fas fa-bars"></i>
+                  </label>
+                  <input type="checkbox" id="btn" />
+                  <ul>
+                    <li class="logos">
+                      <a href="#"
+                        ><div class="logo"><h1>LOGO</h1></div></a
+                      >
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li>
+                      <label for="btn-1" class="show">About +</label>
+                      <a href="#">About</a>
+                      <input type="checkbox" id="btn-1" />
+                      <ul>
+                        <li><a href="about.html">About Guru</a></li>
+                        <li>
+                          <a href="client.html">Our Clients</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <label for="btn-1" class="show">Mantra +</label>
+                      <a href="#">Mantra</a>
+                      <input type="checkbox" id="btn-1" />
+                      <ul>
+                        <li><a href="#">Mantra1</a></li>
+                        <li>
+                          <a href="#">Mantra2</a>
+                        </li>
+                        <li>
+                          <a href="#">Mantra3</a>
+                        </li>
+                        <li>
+                          <a href="#">Mantra4</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header-end -->
+
+    <div class="page-bg img-bg">
+      <div class="page-name">
+        <div>
+          <h1>Gallery</h1>
+        </div>
+      </div>
+      <img src="./images/footer-imag.png" alt="" />
+    </div>
+
+    <!-- gallery-page-start -->
+    <div class="gallery-page margin">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="gallery">
+              <ul class="flex-center">
+                <li class="list on" data-filters="img1">Images 1</li>
+                <li class="list" data-filters="images">Images 2</li>
+                <li class="list" data-filters="video">Video</li>
+              </ul>
+              <div class="images-list">
+                <div class="row">
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox img1"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g1.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g1.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox img1"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g2.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g2.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox img1"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g3.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g3.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox img1"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g4.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g4.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox img1"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g5.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g5.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox img1"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g6.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g6.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox img1"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g7.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g7.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox images"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g8.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g8.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox images"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g9.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g9.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox images"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g10.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g10.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox images"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g11.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g11.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox images"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g12.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g12.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox images"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g13.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g13.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox video"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g14.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g14.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox video"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g15.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g15.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox video"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g16.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g16.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox video"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g17.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g17.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox video"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g18.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g18.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox video"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g19.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g19.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 itemBox video"
+                  >
+                    <div class="box">
+                      <div
+                        data-wow-duration="2s"
+                        class="img-bg"
+                        style="background-image: url(./images/g20.jpg)"
+                        alt=""
+                      >
+                        <div class="icons">
+                          <a href="./images/g20.jpg" data-lightbox="mygallery">
+                            <i class="fas fa-search"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- gallery-page-end -->
+
+    <!-- footer-start -->
+    <div class="footer margin">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <footer>
+              <div class="row">
+                <div class="col-lg-3 wow animate__animated animate__fadeInUp">
+                  <div class="logo">
+                    <h1>LOGO</h1>
+                    <div class="info">
+                      <h6>+1800-123-123</h6>
+                      <p>
+                        Donec id elit non mi porta gravida at eget metus. Donec
+                        id elit non Vestibulum id ligula porta felis euism od
+                        semper.
+                      </p>
+                      <a href="#" class="read-more"
+                        >Read More <i class="fas fa-long-arrow-alt-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 wow animate__animated animate__fadeInUp animate__delay-1s"
+                >
+                  <div class="inner">
+                    <h6>OUR SERVICES</h6>
+                    <ul>
+                      <li><i class="fas fa-caret-right"></i> How to book</li>
+                      <li>
+                        <i class="fas fa-caret-right"></i> General letting
+                      </li>
+                      <li><i class="fas fa-caret-right"></i> conditions</li>
+                      <li>
+                        <i class="fas fa-caret-right"></i> Jobs and careers
+                      </li>
+                      <li>
+                        <i class="fas fa-caret-right"></i> Travel agent
+                        resources
+                      </li>
+                      <li><i class="fas fa-caret-right"></i> Our Agents</li>
+                      <li><i class="fas fa-caret-right"></i> About Us</li>
+                      <li><i class="fas fa-caret-right"></i> Contact Us</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 wow animate__animated animate__fadeInUp animate__delay-2s"
+                >
+                  <div class="inner">
+                    <h6>USEFULL LINKS</h6>
+                    <ul>
+                      <li><i class="fas fa-caret-right"></i> Home</li>
+                      <li><i class="fas fa-caret-right"></i> About us</li>
+                      <li><i class="fas fa-caret-right"></i> horoscope</li>
+                      <li><i class="fas fa-caret-right"></i> services</li>
+                      <li><i class="fas fa-caret-right"></i> shop</li>
+                      <li><i class="fas fa-caret-right"></i> news</li>
+                      <li><i class="fas fa-caret-right"></i> Contact Us</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 wow animate__animated animate__fadeInUp animate__delay-3s"
+                >
+                  <h6>Social LINKS</h6>
+                  <div class="social-links">
+                    <a href="#"
+                      ><div class="icons flex-center">
+                        <i class="fab fa-facebook"></i></div
+                    ></a>
+                    <a href="#">
+                      <div class="icons flex-center">
+                        <i class="fab fa-twitter"></i>
+                      </div>
+                    </a>
+                    <a href="#"
+                      ><div class="icons flex-center">
+                        <i class="fab fa-youtube"></i></div
+                    ></a>
+                    <a href="#">
+                      <div class="icons flex-center">
+                        <i class="fab fa-instagram"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <div class="copy-right">© Copyright 2020, All right Reserved</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer-end -->
+
+    <!-- scripts-js -->
+    <script src="./js/scripts.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script>
+      // wow-animation
+      new WOW().init();
+    </script>
+  </body>
+</html>

@@ -7,7 +7,7 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1094px) {
   .header nav .social-icons {
     display: none;
   }
@@ -50,6 +50,12 @@
   }
   .services-page .box {
     padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .client-page .client-list .img-bg {
+    height: 300px;
   }
 }
 

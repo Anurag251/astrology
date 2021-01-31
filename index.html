@@ -93,34 +93,35 @@
                       >
                     </li>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li>
-                      <label for="btn-1" class="show">About Guru +</label>
-                      <a href="#">About Guru</a>
+                      <label for="btn-1" class="show">About +</label>
+                      <a href="#">About</a>
                       <input type="checkbox" id="btn-1" />
                       <ul>
-                        <li><a href="#">About1</a></li>
+                        <li><a href="about.html">About Guru</a></li>
                         <li>
-                          <a href="#">About2</a>
-                        </li>
-                        <li>
-                          <a href="#">About3</a>
-                        </li>
-                        <li>
-                          <a href="#">About4</a>
+                          <a href="client.html">Our Clients</a>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <label for="btn-2" class="show">Services +</label>
-                      <a href="services.html">Services</a>
-                      <input type="checkbox" id="btn-2" />
+                      <label for="btn-1" class="show">Mantra +</label>
+                      <a href="#">Mantra</a>
+                      <input type="checkbox" id="btn-1" />
                       <ul>
-                        <li><a href="services.html">Service1</a></li>
-                        <li><a href="services.html">Service2</a></li>
-                        <li><a href="services.html">Service3</a></li>
+                        <li><a href="#">Mantra1</a></li>
+                        <li>
+                          <a href="#">Mantra2</a>
+                        </li>
+                        <li>
+                          <a href="#">Mantra3</a>
+                        </li>
+                        <li>
+                          <a href="#">Mantra4</a>
+                        </li>
                       </ul>
                     </li>
-                    <li><a href="mantra.html">Mantra</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -1016,64 +1017,13 @@
     </div>
     <!-- footer-end -->
 
+    <!-- scripts-js -->
+    <script src="./js/scripts.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/wow.min.js"></script>
     <script>
       // wow-animation
       new WOW().init();
-
-      // date&time
-      function updateClock() {
-        let now = new Date();
-        let day = now.getDay(),
-          month = now.getMonth(),
-          date = now.getDate(),
-          year = now.getFullYear(),
-          hour = now.getHours(),
-          minute = now.getMinutes(),
-          second = now.getSeconds();
-
-        let months = [
-          'jan',
-          'feb',
-          'mar',
-          'apr',
-          'may',
-          'jun',
-          'jul',
-          'aug',
-          'sep',
-          'oct',
-          'nov',
-          'dec',
-        ];
-        let week = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
-        let ids = ['day', 'date', 'month', 'year', 'hour', 'minute', 'second'];
-        let values = [
-          week[day],
-          months[month],
-          date,
-          year,
-          hour,
-          minute,
-          second,
-        ];
-
-        for (let i = 0; i < ids.length; i++)
-          document.getElementById(ids[i]).firstChild.nodeValue = values[i];
-      }
-
-      function initClock() {
-        updateClock();
-        window.setInterval('updateClock()', 1);
-      }
-
-      const navbar = document.querySelector('.navbars');
-      window.onscroll = () => {
-        this.scrollY > 250
-          ? navbar.classList.add('sticky')
-          : navbar.classList.remove('sticky');
-      };
 
       // slider
       var swiper = new Swiper('.slider .swiper-container', {
