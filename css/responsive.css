@@ -35,6 +35,9 @@
   .header nav .social-icons {
     display: none;
   }
+  .appoinment {
+    width: 80%;
+  }
   .client .img-bg {
     height: 100px;
     width: 100px;
@@ -54,6 +57,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .appoinment {
+    width: 80%;
+  }
   .client-page .client-list .img-bg {
     height: 300px;
   }
@@ -83,6 +89,9 @@
   }
   .header nav .icon {
     right: 20px;
+  }
+  .appoinment {
+    width: 90%;
   }
   .get-in-touch .box form .fname {
     float: none;

@@ -74,7 +74,7 @@
                 </p>
               </div>
               <div class="appo">
-                <a class="button" href="#">Appoinment</a>
+                <a class="button appo-btn" href="#">Appoinment</a>
               </div>
             </div>
             <hr />
@@ -106,25 +106,30 @@
                       </ul>
                     </li>
                     <li>
-                      <label for="btn-1" class="show">Mantra +</label>
+                      <label for="btn-2" class="show">Mantra +</label>
                       <a href="#">Mantra</a>
-                      <input type="checkbox" id="btn-1" />
+                      <input type="checkbox" id="btn-2" />
                       <ul>
-                        <li><a href="#">Mantra1</a></li>
+                        <li><a href="mantra.html">Mantra1</a></li>
                         <li>
-                          <a href="#">Mantra2</a>
+                          <a href="mantra.html">Mantra2</a>
                         </li>
                         <li>
-                          <a href="#">Mantra3</a>
+                          <a href="mantra.html">Mantra3</a>
                         </li>
                         <li>
-                          <a href="#">Mantra4</a>
+                          <a href="mantra.html">Mantra4</a>
                         </li>
                       </ul>
                     </li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li class="appo-mob-btn">
+                      <label class="show"
+                        ><a href="#" class="button">Appoinment</a></label
+                      >
+                    </li>
                   </ul>
                 </div>
                 <div class="social-icons">
@@ -139,6 +144,65 @@
       </div>
     </div>
     <!-- header-end -->
+
+    <div class="appo-bg"></div>
+
+    <div class="appoinment">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box">
+              <h1>Appoinments</h1>
+              <div class="appo-close flex-center">
+                <div class="cross">&times;</div>
+              </div>
+              <form action="">
+                <div class="group">
+                  <input
+                    class="form-input"
+                    name="name"
+                    type="text"
+                    onchange="getData(this)"
+                  />
+                  <label name="name" class="form-input-label">Name</label>
+                </div>
+                <div class="group">
+                  <input
+                    class="form-input"
+                    name="email"
+                    type="email"
+                    onchange="getData(this)"
+                  />
+                  <label name="email" class="form-input-label">E-mail</label>
+                </div>
+                <div class="group">
+                  <input
+                    class="form-input"
+                    name="phone"
+                    type="number"
+                    onchange="getData(this)"
+                  />
+                  <label name="phone" class="form-input-label"
+                    >Phone Number</label
+                  >
+                </div>
+                <div class="group">
+                  <input
+                    class="form-input"
+                    name="appoinment"
+                    type="number"
+                    onchange="getData(this)"
+                  />
+                  <label name="appoinment" class="form-input-label"
+                    >Appoinment Date</label
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- slider-start -->
     <div class="slider">

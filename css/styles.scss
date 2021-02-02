@@ -1412,3 +1412,181 @@ p {
 }
 
 /******* client-page-end *******/
+
+.appo-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  width: 100%;
+  display: none;
+}
+
+.appoinment {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+
+  &.appo-show {
+    top: 50%;
+    opacity: 1;
+    z-index: 10;
+  }
+
+  .box {
+    position: relative;
+
+    .appo-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 24px;
+      border: 1px solid #000;
+      text-align: center;
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+
+      .cross {
+        line-height: 0;
+      }
+    }
+  }
+
+  $sub-color: grey;
+  $main-color: black;
+
+  @mixin shrinkLabel {
+    top: -14px;
+    font-size: 12px;
+    color: $main-color;
+  }
+
+  .group {
+    position: relative;
+    margin: 45px 0;
+
+    .form-input {
+      background: none;
+      background-color: white;
+      color: $sub-color;
+      font-size: 18px;
+      padding: 10px 10px 10px 5px;
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid $sub-color;
+      margin: 25px 0;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus ~ .form-input-label {
+        @include shrinkLabel();
+      }
+    }
+
+    input[type='password'] {
+      letter-spacing: 0.3em;
+    }
+
+    .form-input-label {
+      color: $sub-color;
+      font-size: 16px;
+      font-weight: normal;
+      position: absolute;
+      pointer-events: none;
+      left: 5px;
+      top: 10px;
+      transition: 300ms ease all;
+
+      &.shrink {
+        @include shrinkLabel();
+      }
+    }
+  }
+}
+
+.mantra {
+  h1 {
+    margin-bottom: 2rem;
+  }
+  .item {
+    margin: 1rem 0;
+    .img-bg {
+      position: relative;
+      height: 500px;
+      .img-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 1.5rem 2rem;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+
+        h3 {
+          color: var(--main);
+          font-size: 24px;
+        }
+
+        h5 {
+          font-size: 16px;
+          color: #fff;
+          transition: 0.4s;
+
+          &:hover {
+            color: var(--sec);
+          }
+        }
+
+        ul {
+          opacity: 0;
+          height: 0;
+          margin: 0;
+          transition: 0.5s ease-in-out;
+          overflow-y: hidden;
+          font-size: 15px;
+          font-weight: 200;
+          list-style: decimal;
+
+          li {
+            color: var(--bg);
+          }
+        }
+      }
+      &:hover ul {
+        opacity: 1;
+        height: 70px;
+      }
+    }
+  }
+}
+
+.mantra-details-page {
+  .title {
+    margin-bottom: 3rem;
+  }
+  .img-bg {
+    height: 500px;
+  }
+  .group {
+    p {
+      margin: 5px 0;
+      width: 80%;
+      text-align: justify;
+    }
+  }
+}

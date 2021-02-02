@@ -50,6 +50,10 @@
     }
   }
 
+  .appoinment {
+    width: 80%;
+  }
+
   .client {
     .img-bg {
       height: 100px;
@@ -77,6 +81,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .appoinment {
+    width: 80%;
+  }
   .client-page {
     .client-list {
       .img-bg {
@@ -115,6 +122,10 @@
         right: 20px;
       }
     }
+  }
+
+  .appoinment {
+    width: 90%;
   }
 
   .get-in-touch {

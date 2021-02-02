@@ -43,3 +43,42 @@ window.onscroll = () => {
     ? navbar.classList.add('sticky')
     : navbar.classList.remove('sticky');
 };
+
+// appoinment-form
+let formInputLabels = document.querySelectorAll('.form-input-label');
+
+function getData(data) {
+  formInputLabels.forEach((formInputLabel) => {
+    let dataAttributeName = data.getAttribute('name');
+    let labelAttributeName = formInputLabel.getAttribute('name');
+
+    if (dataAttributeName === labelAttributeName) {
+      if (data.getAttribute('name') === dataAttributeName) {
+        data.value.length
+          ? formInputLabel.classList.add('shrink')
+          : formInputLabel.classList.remove('shrink');
+      }
+    }
+  });
+}
+
+let appoCloseBtn = document.querySelector('.appo-close');
+let appoBtn = document.querySelector('.appo-btn');
+let appoinment = document.querySelector('.appoinment');
+let appoBg = document.querySelector('.appo-bg');
+let appoMobBtn = document.querySelector('.appo-mob-btn');
+
+appoBtn.addEventListener('click', () => {
+  appoinment.classList.add('appo-show');
+  appoBg.style.display = 'block';
+});
+
+appoMobBtn.addEventListener('click', () => {
+  appoinment.classList.add('appo-show');
+  appoBg.style.display = 'block';
+});
+
+appoCloseBtn.addEventListener('click', () => {
+  appoinment.classList.remove('appo-show');
+  appoBg.style.display = 'none';
+});
